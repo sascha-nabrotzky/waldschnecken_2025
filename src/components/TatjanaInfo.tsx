@@ -1,0 +1,73 @@
+import React from "react";
+import TatjanaImg from "../assets/images/Tatjana.webp";
+import CloseIcon from "../assets/icons/close.svg?react";
+
+const TatanaInfo: React.FC = () => {
+    const modalRef1 = React.useRef<HTMLDialogElement>(null);
+
+    const openModal1 = (): void => {
+        if (modalRef1.current != null) {
+            modalRef1.current.showModal();
+        }
+    };
+    const closeModal1 = (): void => {
+        if (modalRef1.current != null) {
+            modalRef1.current.close();
+        }
+    };
+
+    return (
+        <div className="col-start-2 col-end-4 flex flex-col items-center justify-center text-center md:col-start-2 md:col-end-3">
+            <div className="mb-4 aspect-square w-36 overflow-hidden rounded-full bg-mine-shaft-200 md:w-48">
+                <img
+                    src={TatjanaImg}
+                    alt="Foto von Tagesmutter Tatjana Nabrotzky"
+                    className="h-full w-full object-cover"
+                />
+            </div>
+            <a href={"tel: +49 170 2802494"}>
+                <p className="text-xl">
+                    Tatjana Nabrotzky
+                    <br />
+                    <strong className="tracking-wider">0170 2802494</strong>
+                </p>
+                <p className="mt-1 border-t pt-2 leading-5 text-mine-shaft-600">
+                    Staatl. geprüfte Erzieherin <br />
+                    und zertifizierte Tagesmutter
+                </p>
+            </a>
+            <button
+                onClick={openModal1}
+                className="text-white mt-4 rounded-full bg-mine-shaft-600 px-4 pt-1.5 pb-2 text-xl leading-none transition-opacity duration-300 hover:opacity-50"
+            >
+                Details
+            </button>
+
+            <dialog
+                ref={modalRef1}
+                className="bg-white mx-4 max-w-xl rounded pt-4 pb-8 text-left backdrop:bg-mine-shaft-950/70 sm:mx-auto"
+            >
+                <div className="flex justify-end">
+                    <button
+                        onClick={closeModal1}
+                        className="mb-2 px-4"
+                        aria-label="close tatjanas info dialog box"
+                    >
+                        <CloseIcon className="h-6" />
+                    </button>
+                </div>
+                <div className="px-8 text-xl">
+                    Hallo, ich heiße <strong>Tatjana Nabrotzky,</strong> ich bin
+                    1981 geboren, bin verheiratet und habe zwei eigene Kinder
+                    die 2004 und 2008 geboren sind. Ich bin seit 2002 staatlich
+                    anerkannte Erzieherin und habe bis 2015 in verschiedenen
+                    Kindergärten gearbeitet. Seit Oktober 2015 bin ich als
+                    selbstständige Tagesmutter tätig und seit 01.08.2023 in der
+                    Großtagespflege Waldschnecken.
+                </div>
+            </dialog>
+        </div>
+    );
+};
+
+export default TatanaInfo;
