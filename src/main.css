@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@theme {
+    --font-*: initial;
+    --font-sans: "Barlow", sans-serif;
+    --font-serif: "Yeseva One", serif;
+
+    --color-*: initial;
+
+    /* whiskey */
+    --color-whiskey-50: #fbf7f1;
+    --color-whiskey-100: #f6edde;
+    --color-whiskey-200: #ebd7bd;
+    --color-whiskey-300: #debb93;
+    --color-whiskey-400: #d4a173;
+    --color-whiskey-500: #c67f49;
+    --color-whiskey-600: #b86b3e;
+    --color-whiskey-700: #995435;
+    --color-whiskey-800: #7c4530;
+    --color-whiskey-900: #643a2a;
+    --color-whiskey-950: #361d14;
+
+    /* roman-coffee */
+    --color-roman-coffee-50: #f6f4f0;
+    --color-roman-coffee-100: #e9e1d8;
+    --color-roman-coffee-200: #d4c4b4;
+    --color-roman-coffee-300: #bba189;
+    --color-roman-coffee-400: #a78468;
+    --color-roman-coffee-500: #997159;
+    /* --color-roman-coffee-600: #7b5747; */
+    --color-roman-coffee-600: #725141; /* modfified for contrast */
+    --color-roman-coffee-700: #69483f;
+    --color-roman-coffee-800: #5a3e39;
+    --color-roman-coffee-900: #4f3734;
+    --color-roman-coffee-950: #2c1d1c;
+
+    /* battleship-gray */
+    --color-battleship-gray-50: #f3f5f0;
+    --color-battleship-gray-100: #e5e8df;
+    --color-battleship-gray-200: #cfd4c2;
+    --color-battleship-gray-300: #b0b99d;
+    --color-battleship-gray-400: #8f9b78;
+    --color-battleship-gray-500: #768260;
+    --color-battleship-gray-600: #5b664a;
+    --color-battleship-gray-700: #48503b;
+    --color-battleship-gray-800: #3c4232;
+    --color-battleship-gray-900: #343a2d;
+    --color-battleship-gray-950: #1a1d16;
+
+    /* piper */
+    --color-piper-50: #fdf6ef;
+    --color-piper-100: #fbe9d9;
+    --color-piper-200: #f5d0b3;
+    --color-piper-300: #efaf82;
+    --color-piper-400: #e78550;
+    --color-piper-500: #e2652d;
+    --color-piper-600: #c84a21;
+    --color-piper-700: #af3b1f;
+    --color-piper-800: #8c3120;
+    --color-piper-900: #712a1d;
+    --color-piper-950: #3d120d;
+
+    /* mine-shaft */
+    --color-mine-shaft-50: #f6f6f6;
+    --color-mine-shaft-100: #e7e7e7;
+    --color-mine-shaft-200: #d1d1d1;
+    --color-mine-shaft-300: #b0b0b0;
+    --color-mine-shaft-400: #888888;
+    --color-mine-shaft-500: #6d6d6d;
+    /* --color-mine-shaft-600: #5d5d5d; */
+    --color-mine-shaft-600: #595959; /* modfified for contrast */
+    --color-mine-shaft-700: #4f4f4f;
+    --color-mine-shaft-800: #454545;
+    --color-mine-shaft-900: #3d3d3d;
+    --color-mine-shaft-950: #2b2b2b;
+}
+
+@layer base {
+    /* yeseva-one-regular - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: "Yeseva One";
+        font-style: normal;
+        font-weight: 400;
+        src:
+            url("../src/assets/fonts/yeseva-one-v22-latin-regular.woff2")
+                format("woff2"),
+            /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+                url("../src/assets/fonts/yeseva-one-v22-latin-regular.ttf")
+                format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    }
+
+    /* barlow-regular - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: "Barlow";
+        font-style: normal;
+        font-weight: 400;
+        src:
+            url("../src/assets/fonts/barlow-v12-latin-regular.woff2")
+                format("woff2"),
+            /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+                url("../src/assets/fonts/barlow-v12-latin-regular.ttf")
+                format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    }
+
+    /* barlow-700 - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: "Barlow";
+        font-style: normal;
+        font-weight: 700;
+        src:
+            url("../src/assets/fonts/barlow-v12-latin-700.woff2")
+                format("woff2"),
+            /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+                url("../src/assets/fonts/barlow-v12-latin-700.ttf")
+                format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+    }
+}
