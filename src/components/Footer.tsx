@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <>
             <WavesBottom className="text-roman-coffee-600" />
             <footer className="relative right-0 bottom-0 left-0">
-                <nav className="text-md text-white grid grid-cols-[minmax(2rem,_1fr)_repeat(2,_minmax(0,_25rem))_minmax(2rem,_1fr)] bg-roman-coffee-600 pb-12 text-right max-sm:gap-y-2 md:gap-x-16">
+                <nav className="text-md grid grid-cols-[minmax(2rem,_1fr)_repeat(2,_minmax(0,_25rem))_minmax(2rem,_1fr)] bg-roman-coffee-600 pb-12 text-right text-white max-sm:gap-y-2 md:gap-x-16">
                     <div className="col-start-2 col-end-4 flex justify-between">
                         <div className="flex flex-wrap gap-x-8">
                             <a
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
                                 Impressum
                             </Link>
                             <Link
-                                to="/privacypolicy"
+                                to="/privacy-policy"
                                 className="mb-8 text-lg transition-opacity duration-300 hover:opacity-50"
                             >
                                 Datenschutz
@@ -48,23 +48,13 @@ const Footer: React.FC = () => {
                     </div>
                     <div className="col-start-2 col-end-4">
                         <a
-                            href="https://sascha-nabrotzky.github.io"
+                            href="https://sascha-nabrotzky.de"
                             target="_blank"
                             rel="noreferrer noopener"
                             className="underline transition-opacity duration-300 hover:opacity-50"
                         >
                             Webdesign
                         </a>{" "}
-                        &{" "}
-                        <a
-                            href="https://sascha-nabrotzky.de"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            className="underline transition-opacity duration-300 hover:opacity-50"
-                        >
-                            Illustration
-                        </a>{" "}
-                        |{" "}
                         <span className="whitespace-nowrap">
                             Sascha Nabrotzky
                         </span>

@@ -13,7 +13,7 @@ const Header: React.FC = () => {
                 <Logo className="text-white mx-auto h-24" />
             </div>
 
-            <header className="sticky top-0 z-20 flex flex-col justify-center">
+            <menu className="sticky top-0 z-20 flex flex-col justify-center">
                 <nav className="text-white flex w-full items-center justify-center gap-4 bg-roman-coffee-600 py-2 text-xl shadow-xl">
                     <Link
                         to="/"
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
                         News
                     </Link>
                 </nav>
-            </header>
+            </menu>
 
             <WavesTop className="text-roman-coffee-600 xl:origin-top-right xl:rotate-6" />
         </>

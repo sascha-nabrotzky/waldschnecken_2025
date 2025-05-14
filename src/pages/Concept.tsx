@@ -12,7 +12,7 @@ const Concept: React.FC = () => {
                 <img
                     src={Logo}
                     alt="Illustration eines Igels von Sascha Nabrotzky"
-                    className="col-start-2 col-end-4 mx-auto aspect-square max-w-md rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] md:col-start-3"
+                    className="col-start-2 col-end-4 mx-auto aspect-square rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] md:col-start-3"
                 />
                 <section className="col-start-2 col-end-4">
                     <h3 className="mb-2 text-2xl font-bold">
