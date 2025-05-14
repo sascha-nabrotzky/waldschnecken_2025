@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -14,6 +14,10 @@ const MainContent: React.FC<Props> = ({
     subtitle,
     isHerotitle,
 }) => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="grid min-h-dvh grid-rows-[repeat(3,_min-content)_1fr_min-content] text-mine-shaft-950">
             <Header />
