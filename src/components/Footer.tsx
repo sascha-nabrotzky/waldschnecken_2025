@@ -51,13 +51,11 @@ const Footer: React.FC = () => {
                             href="https://sascha-nabrotzky.de"
                             target="_blank"
                             rel="noreferrer noopener"
-                            className="underline transition-opacity duration-300 hover:opacity-50"
+                            className="transition-opacity duration-300 hover:opacity-50"
+                            aria-label="Sascha Nabrotzky - Webdesign & Entwicklung"
                         >
-                            Webdesign
-                        </a>{" "}
-                        <span className="whitespace-nowrap">
-                            Sascha Nabrotzky
-                        </span>
+                            Sascha Nabrotzky - Webdesign & Entwicklung
+                        </a>
                     </div>
                 </nav>
             </footer>

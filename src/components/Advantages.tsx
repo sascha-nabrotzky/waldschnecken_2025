@@ -69,8 +69,8 @@ const Advantages: React.FC = () => {
             {text.map((item, index) => {
                 return (
                     <div
-                        className="advantage flex translate-y-12 flex-col opacity-0"
                         key={index}
+                        className="advantage ranslate-y-12 flex flex-col opacity-0"
                     >
                         <Grass className="mx-auto h-12 text-battleship-gray-200" />
                         <div className="flex-1 rounded-3xl bg-whiskey-200 bg-gradient-to-b from-battleship-gray-200 via-whiskey-200 to-whiskey-200 px-6 py-8 text-center text-xl">

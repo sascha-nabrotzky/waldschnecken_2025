@@ -37,14 +37,14 @@ const OksanaInfo: React.FC = () => {
             </a>
             <button
                 onClick={openModal2}
-                className="text-white mt-4 rounded-full bg-mine-shaft-600 px-4 pt-1.5 pb-2 text-lg leading-none transition-opacity duration-300 hover:opacity-50"
+                className="mt-4 rounded-full bg-mine-shaft-600 px-4 pt-1.5 pb-2 text-lg leading-none text-white transition-opacity duration-300 hover:opacity-50"
             >
                 Details
             </button>
 
             <dialog
                 ref={modalRef2}
-                className="bg-white mx-4 max-w-xl rounded pt-4 pb-8 text-left backdrop:bg-mine-shaft-950/70 sm:mx-auto"
+                className="mx-4 max-w-xl rounded bg-white pt-4 pb-8 text-left backdrop:bg-mine-shaft-950/70 sm:m-auto"
             >
                 <div className="flex justify-end">
                     <button
