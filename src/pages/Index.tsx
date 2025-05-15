@@ -5,6 +5,7 @@ import Contact from "../components/Conact";
 import Advantages from "../components/Advantages";
 import Testimonials from "../components/Testimonials";
 import Logo from "../assets/images/Logo_Waldschnecken.webp";
+import LogoSmall from "../assets/images/Logo_Waldschnecken_small.webp";
 
 const IndexPage: React.FC = () => {
     return (
@@ -24,11 +25,24 @@ const IndexPage: React.FC = () => {
                 subtitle="Liebevolle und naturbezogene Betreuung Ihrer Kinder in Ladbergen durch die Tagesmütter Tatjana Nabrotzky und Oksana Welk."
                 isHerotitle
             >
-                <img
-                    src={Logo}
-                    alt="Logo der Großtagespflege Waldschnecken | von Sascha Nabrotzky"
-                    className="col-start-2 col-end-4 mx-auto"
-                />
+                <picture className="col-start-2 col-end-4 mx-auto">
+                    <source
+                        media="(min-width: 30em)"
+                        srcSet={Logo}
+                        type="image/webp"
+                        width="800"
+                        height="383"
+                    />
+                    <img
+                        src={LogoSmall}
+                        alt="Logo der Großtagespflege Waldschnecken | von Sascha Nabrotzky"
+                        loading="lazy"
+                        decoding="async"
+                        width="350"
+                        height="168"
+                    />
+                </picture>
+
                 <Testimonials />
                 <Advantages />
                 <Contact />

@@ -36,7 +36,7 @@ const MainContent: React.FC<Props> = ({
                     >
                         <h1
                             className={
-                                "break-word font-serif text-3xl leading-4.5 md:mt-12 md:text-5xl/snug"
+                                "break-word font-serif text-3xl md:mt-12 md:text-5xl/snug"
                             }
                         >
                             {pagetitle}
