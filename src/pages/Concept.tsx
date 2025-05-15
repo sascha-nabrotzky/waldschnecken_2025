@@ -1,10 +1,19 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import MainLayout from "../components/MainLayout";
 import Logo from "../assets/images/Sei_entspannt.webp";
 
 const Concept: React.FC = () => {
     return (
         <>
+            <Helmet>
+                <title>Waldschnecken | Konzept</title>
+                <meta
+                    name="description"
+                    content="Grundlegendes Ziel: Bewegung, Wald und Natur, Sprachförderung, gesunde Ernährung"
+                />
+            </Helmet>
+
             <MainLayout
                 pagetitle="Pädagogische Schwerpunkte"
                 subtitle="Natürlicher Tagesablauf und Bewegung an der frischen Luft"

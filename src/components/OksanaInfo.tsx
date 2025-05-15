@@ -37,7 +37,7 @@ const OksanaInfo: React.FC = () => {
             </a>
             <button
                 onClick={openModal2}
-                className="mt-4 rounded-full bg-mine-shaft-600 px-4 pt-1.5 pb-2 text-lg leading-none text-white transition-opacity duration-300 hover:opacity-50"
+                className="mt-4 rounded-full bg-mine-shaft-600 px-4 pt-1.5 pb-2 text-lg leading-none text-white transition-opacity duration-300 hover:cursor-pointer hover:opacity-50"
             >
                 Details
             </button>

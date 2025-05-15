@@ -6,15 +6,15 @@ import WavesTop from "../assets/images/waves-top.svg?react";
 const Header: React.FC = () => {
     return (
         <>
-            <div
-                className="bg-roman-coffee-600 sm:hidden"
-                aria-label="Logo der Waldschnecken"
-            >
-                <Logo className="text-white mx-auto h-24" />
+            <div className="bg-roman-coffee-600 sm:hidden">
+                <Logo
+                    className="mx-auto h-24 text-white"
+                    aria-label="Logo der Waldschnecken"
+                />
             </div>
 
-            <menu className="sticky top-0 z-20 flex flex-col justify-center">
-                <nav className="text-white flex w-full items-center justify-center gap-4 bg-roman-coffee-600 py-2 text-xl shadow-xl">
+            <header className="sticky top-0 z-20 flex flex-col justify-center">
+                <nav className="flex w-full items-center justify-center gap-4 bg-roman-coffee-600 py-2 text-xl text-white shadow-xl">
                     <Link
                         to="/"
                         className="transition-opacity duration-300 hover:opacity-50"
@@ -27,7 +27,7 @@ const Header: React.FC = () => {
                     >
                         Konzept
                     </Link>
-                    <Logo className="text-white mx-8 h-24 max-sm:hidden" />
+                    <Logo className="mx-8 h-24 text-white max-sm:hidden" />
                     <Link
                         to="/rooms"
                         className="transition-opacity duration-300 hover:opacity-50"
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
                         News
                     </Link>
                 </nav>
-            </menu>
+            </header>
 
             <WavesTop className="text-roman-coffee-600 xl:origin-top-right xl:rotate-6" />
         </>

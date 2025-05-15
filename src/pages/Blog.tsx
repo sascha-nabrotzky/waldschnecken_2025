@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import MainLayout from "../components/MainLayout";
 import SeiFrechImg from "../assets/images/Sei_frech.webp";
 import Eichel from "../assets/images/Eichel.webp";
@@ -31,6 +32,14 @@ const Blog: React.FC = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Waldschnecken | News</title>
+                <meta
+                    name="description"
+                    content="Bekommt einen kleinen Einblick in unsere tägliche Erlebnisse und Aktivitäten."
+                />
+            </Helmet>
+
             <MainLayout
                 pagetitle="Unser Alltagsleben"
                 subtitle="Seht was Eure Kinder alles erleben oder wir euch sonst noch mitteilen wollen."

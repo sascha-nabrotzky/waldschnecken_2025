@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import MainLayout from "../components/MainLayout";
 import Contact from "../components/Conact";
 import Advantages from "../components/Advantages";
@@ -7,20 +8,32 @@ import Logo from "../assets/images/Logo_Waldschnecken.webp";
 
 const IndexPage: React.FC = () => {
     return (
-        <MainLayout
-            pagetitle="Kindertagespflege mit dem Herzen in der Natur"
-            subtitle="Liebevolle und naturbezogene Betreuung Ihrer Kinder in Ladbergen durch die Tagesmütter Tatjana Nabrotzky und Oksana Welk."
-            isHerotitle
-        >
-            <img
-                src={Logo}
-                alt="Logo der Großtagespflege Waldschnecken | von Sascha Nabrotzky"
-                className="col-start-2 col-end-4 mx-auto"
-            />
-            <Testimonials />
-            <Advantages />
-            <Contact />
-        </MainLayout>
+        <>
+            <Helmet>
+                <title>
+                    Waldschnecken | Großkindertagespflege in Ladbergen
+                </title>
+                <meta
+                    name="description"
+                    content="Kindertagespflege Waldschnecken in Ladbergen: Liebevolle, naturbezogene Betreuung, kleine Gruppen, individuelle Förderung und familiäre Atmosphäre durch erfahrene Tagesmütter."
+                />
+            </Helmet>
+
+            <MainLayout
+                pagetitle="Kindertagespflege mit dem Herzen in der Natur"
+                subtitle="Liebevolle und naturbezogene Betreuung Ihrer Kinder in Ladbergen durch die Tagesmütter Tatjana Nabrotzky und Oksana Welk."
+                isHerotitle
+            >
+                <img
+                    src={Logo}
+                    alt="Logo der Großtagespflege Waldschnecken | von Sascha Nabrotzky"
+                    className="col-start-2 col-end-4 mx-auto"
+                />
+                <Testimonials />
+                <Advantages />
+                <Contact />
+            </MainLayout>
+        </>
     );
 };
 

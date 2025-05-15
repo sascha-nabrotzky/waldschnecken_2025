@@ -2,7 +2,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
 import Index from "./pages/Index.tsx";
 import Concept from "./pages/Concept.tsx";
-import Rooms from "./pages/rooms.tsx";
+import Rooms from "./pages/Rooms.tsx";
 import Blog from "./pages/Blog.tsx";
 import Imprint from "./pages/Imprint.tsx";
 import PrivacyPolicy from "./pages/Privacypolicy.tsx";

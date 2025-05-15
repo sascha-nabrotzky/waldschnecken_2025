@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Helmet } from "react-helmet";
 import MainLayout from "../components/MainLayout";
 import Logo from "../assets/images/Sei_mutig.webp";
 import Wohnzimmer from "../assets/images/kita-wohnzimmer-1.webp";
@@ -11,6 +12,14 @@ import Aussen from "../assets/images/kita-aussen-1.webp";
 const Rooms: React.FC = () => {
     return (
         <>
+            <Helmet>
+                <title>Waldschnecken | Räumlichkeiten</title>
+                <meta
+                    name="description"
+                    content="Spielen, entspannen, schlafen und essen in unseren gemütlichen Räumen."
+                />
+            </Helmet>
+
             <MainLayout
                 pagetitle="Räume"
                 subtitle="Unsere Großtagespflege befindet sich in einem freistehenden Haus, in der Erdgeschosswohnung "
