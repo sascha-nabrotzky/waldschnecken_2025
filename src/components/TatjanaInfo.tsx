@@ -23,6 +23,8 @@ const TatanaInfo: React.FC = () => {
                     src={TatjanaImg}
                     alt="Foto von Tagesmutter Tatjana Nabrotzky"
                     className="h-full w-full object-cover"
+                    loading="lazy"
+                    decoding="async"
                 />
             </div>
             <a href={"tel: +49 170 2802494"}>

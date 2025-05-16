@@ -23,6 +23,8 @@ const OksanaInfo: React.FC = () => {
                     src={OksanaImg}
                     alt="Foto von Tagesmutter Oksana Welk"
                     className="h-full w-full object-cover"
+                    loading="lazy"
+                    decoding="async"
                 />
             </div>
             <a href={"tel: +49 162 1366853"} className="text-center">
