@@ -12,7 +12,7 @@ const IndexPage: React.FC = () => {
         <>
             <Helmet>
                 <title>
-                    Waldschnecken | Großkindertagespflege in Ladbergen
+                    Waldschnecken | Kindergroßtagespflege in Ladbergen
                 </title>
                 <meta
                     name="description"
@@ -27,6 +27,13 @@ const IndexPage: React.FC = () => {
             >
                 <picture className="col-start-2 col-end-4 mx-auto">
                     <source
+                        media="(max-width: 30em)"
+                        srcSet={LogoSmall}
+                        type="image/webp"
+                        width="350"
+                        height="168"
+                    />
+                    <source
                         media="(min-width: 30em)"
                         srcSet={Logo}
                         type="image/webp"
@@ -36,7 +43,6 @@ const IndexPage: React.FC = () => {
                     <img
                         src={LogoSmall}
                         alt="Logo der Großtagespflege Waldschnecken | von Sascha Nabrotzky"
-                        loading="lazy"
                         decoding="async"
                         width="350"
                         height="168"

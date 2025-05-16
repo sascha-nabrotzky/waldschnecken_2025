@@ -27,7 +27,8 @@ const Rooms: React.FC = () => {
                 <img
                     src={Logo}
                     alt="Illustration eines Bären von Sascha Nabrotzky"
-                    className="col-start-2 col-end-4 mx-auto aspect-square rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] md:col-start-3"
+                    className="col-start-2 col-end-4 mx-auto rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] md:col-start-3"
+                    decoding="async"
                 />
                 <section className="col-start-2 col-end-4 text-xl">
                     <p className="hyphens-auto">
@@ -38,6 +39,7 @@ const Rooms: React.FC = () => {
                         src={Wohnzimmer}
                         alt="Foto des Betreuungsraums"
                         className="mt-12 mb-2 rounded"
+                        loading="lazy"
                     />
                     <p className="hyphens-auto">
                         &#8593; Der große <strong>Betreuungsraum</strong> von
@@ -48,6 +50,7 @@ const Rooms: React.FC = () => {
                         src={Themenzimmer}
                         alt="Foto vom Themenzimmer"
                         className="mt-12 mb-2 rounded"
+                        loading="lazy"
                     />
                     <p className="hyphens-auto">
                         &#8593; Das angrenzende <strong>Themenzimmer</strong>{" "}
@@ -58,6 +61,7 @@ const Rooms: React.FC = () => {
                         src={Kueche}
                         alt="Foto unserer Küche"
                         className="mt-12 mb-2 rounded"
+                        loading="lazy"
                     />
                     <p className="hyphens-auto">
                         &#8593; Die <strong>Küche</strong> ist mit einer neuen
@@ -77,6 +81,7 @@ const Rooms: React.FC = () => {
                         src={Badezimmer}
                         alt="Foto vom Badezimmer"
                         className="mt-12 mb-2 rounded"
+                        loading="lazy"
                     />
                     <p className="hyphens-auto">
                         &#8593; Das <strong>Kinderbadezimmer</strong> bietet ein
@@ -89,6 +94,7 @@ const Rooms: React.FC = () => {
                         src={Aussen}
                         alt="Foto vom Außengelände"
                         className="mt-12 mb-2 rounded"
+                        loading="lazy"
                     />
 
                     <p className="hyphens-auto">
