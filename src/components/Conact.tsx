@@ -44,7 +44,9 @@ const Address: React.FC = () => {
                     E-Mail schreiben
                 </a>
                 {showMail.length > 0 && (
-                    <p className="mt-2 border-t pt-2 font-bold">{showMail}</p>
+                    <p className="mx-auto mt-12 w-fit rounded border px-6 py-2 font-bold">
+                        {showMail}
+                    </p>
                 )}
             </div>
         </>

@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { HashRouter, Routes, Route } from "react-router";
 import Index from "./pages/Index.tsx";
 import Concept from "./pages/Concept.tsx";
 import Rooms from "./pages/Rooms.tsx";
@@ -9,7 +9,7 @@ import PrivacyPolicy from "./pages/Privacypolicy.tsx";
 import "./main.css";
 
 createRoot(document.getElementById("root")!).render(
-    <BrowserRouter>
+    <HashRouter>
         <Routes>
             <Route path={"/"} element={<Index />} />
             <Route path={"/concept"} element={<Concept />} />
@@ -18,5 +18,5 @@ createRoot(document.getElementById("root")!).render(
             <Route path={"/imprint"} element={<Imprint />} />
             <Route path={"/privacy-policy"} element={<PrivacyPolicy />} />
         </Routes>
-    </BrowserRouter>,
+    </HashRouter>,
 );
