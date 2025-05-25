@@ -68,10 +68,7 @@ const Advantages: React.FC = () => {
         <section className="relative col-start-2 col-end-4 grid gap-6 md:grid-cols-[repeat(auto-fill,_minmax(15rem,_1fr))]">
             {text.map((item, index) => {
                 return (
-                    <div
-                        key={index}
-                        className="advantage ranslate-y-12 flex flex-col opacity-0"
-                    >
+                    <div key={index} className="advantage flex flex-col">
                         <Grass className="mx-auto h-12 text-battleship-gray-200" />
                         <div className="flex-1 rounded-3xl bg-whiskey-200 bg-gradient-to-b from-battleship-gray-200 via-whiskey-200 to-whiskey-200 px-6 py-8 text-center text-xl">
                             <h3>{item.title}</h3>

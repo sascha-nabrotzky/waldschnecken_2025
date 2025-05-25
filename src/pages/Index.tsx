@@ -25,7 +25,7 @@ const IndexPage: React.FC = () => {
                 subtitle="Liebevolle und naturbezogene Betreuung Ihrer Kinder in Ladbergen durch die Tagesmütter Tatjana Nabrotzky und Oksana Welk."
                 isHerotitle
             >
-                <picture className="col-start-2 col-end-4 mx-auto">
+                <picture className="col-start-2 col-end-4 mx-auto mb-4">
                     <source
                         media="(max-width: 30em)"
                         srcSet={LogoSmall}
