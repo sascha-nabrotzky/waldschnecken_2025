@@ -130,12 +130,23 @@
     }
 
     /* Animation */
+    @keyframes slide-in {
+        0% {
+            transform: translateY(2rem);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
     .animate-slideUp {
-        animation: slide-up 600ms forwards;
+        animation: slide-up 800ms forwards;
     }
     @keyframes slide-up {
         0% {
-            transform: translateY(100%);
+            transform: translateY(3rem);
             opacity: 0;
         }
         100% {
