@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import MainLayout from "../components/MainLayout";
+import Testimonial from "../components/Testimonial";
 import SeiMutigIllustration from "../assets/images/Sei_mutig.webp";
 import Wohnzimmer from "../assets/images/kita-wohnzimmer-1.webp";
 import Themenzimmer from "../assets/images/kita-themenzimmer-1.webp";
@@ -30,6 +31,11 @@ const Rooms: React.FC = () => {
                     className="col-start-2 col-end-4 mx-auto rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] md:col-start-3"
                     decoding="async"
                 />
+                <Testimonial
+                    text="Super liebe und einfühlsame Tagesmutter. Würde ich immer immer wieder meine Kinder hin geben."
+                    name="Verena K."
+                    rating={5}
+                />
                 <section className="col-start-2 col-end-4 text-xl">
                     <p className="hyphens-auto">
                         Die Wohnfläche der Wohnung beträgt 103 qm. Die Gruppe
@@ -38,7 +44,7 @@ const Rooms: React.FC = () => {
                     <img
                         src={Wohnzimmer}
                         alt="Foto des Betreuungsraums"
-                        className="mt-12 mb-2 rounded"
+                        className="mt-12 mb-2 w-full rounded"
                         loading="lazy"
                     />
                     <p className="hyphens-auto">
@@ -49,7 +55,7 @@ const Rooms: React.FC = () => {
                     <img
                         src={Themenzimmer}
                         alt="Foto vom Themenzimmer"
-                        className="mt-12 mb-2 rounded"
+                        className="mt-12 mb-2 w-full rounded"
                         loading="lazy"
                     />
                     <p className="hyphens-auto">
@@ -60,7 +66,7 @@ const Rooms: React.FC = () => {
                     <img
                         src={Kueche}
                         alt="Foto unserer Küche"
-                        className="mt-12 mb-2 rounded"
+                        className="mt-12 mb-2 w-full rounded"
                         loading="lazy"
                     />
                     <p className="hyphens-auto">
@@ -71,7 +77,7 @@ const Rooms: React.FC = () => {
                     <img
                         src={Schlafraum}
                         alt="Foto vom Schlafraum"
-                        className="mt-12 mb-2 rounded"
+                        className="mt-12 mb-2 w-full rounded"
                     />
                     <p className="hyphens-auto">
                         &#8593; Ein großer <strong>Schlafraum</strong> lädt zum
@@ -80,7 +86,7 @@ const Rooms: React.FC = () => {
                     <img
                         src={Badezimmer}
                         alt="Foto vom Badezimmer"
-                        className="mt-12 mb-2 rounded"
+                        className="mt-12 mb-2 w-full rounded"
                         loading="lazy"
                     />
                     <p className="hyphens-auto">
@@ -93,7 +99,7 @@ const Rooms: React.FC = () => {
                     <img
                         src={Aussen}
                         alt="Foto vom Außengelände"
-                        className="mt-12 mb-2 rounded"
+                        className="mt-12 mb-2 w-full rounded"
                         loading="lazy"
                     />
 

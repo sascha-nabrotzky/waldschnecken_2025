@@ -14,7 +14,7 @@ const Header: React.FC = () => {
             </div>
 
             <header className="sticky top-0 z-20 flex flex-col justify-center">
-                <nav className="flex w-full items-center justify-center gap-4 bg-roman-coffee-600 py-2 text-xl text-white shadow-xl">
+                <nav className="flex w-full flex-wrap items-center justify-center gap-6 bg-roman-coffee-600 py-2 text-xl text-white shadow-xl">
                     <Link
                         to="/"
                         className="transition-opacity duration-300 hover:opacity-50"

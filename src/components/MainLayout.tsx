@@ -22,7 +22,7 @@ const MainContent: React.FC<Props> = ({
         <div className="grid min-h-dvh grid-rows-[repeat(3,_min-content)_1fr_min-content] text-mine-shaft-950">
             <Header />
             <main
-                className="z-10 my-6 grid grid-cols-[minmax(2rem,_1fr)_repeat(2,_minmax(0,_25rem))_minmax(2rem,_1fr)] gap-y-16 md:gap-x-16 md:gap-y-20 lg:-mt-10 xl:-mt-40 xl:-mb-20"
+                className="z-10 my-6 grid grid-cols-[minmax(2rem,_1fr)_repeat(2,_minmax(0,_25rem))_minmax(2rem,_1fr)] gap-y-16 md:gap-x-16 md:gap-y-20 lg:-mt-10 xl:-mt-40"
                 role="main"
             >
                 {pagetitle != null && (

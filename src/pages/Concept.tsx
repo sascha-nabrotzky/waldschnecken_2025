@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import MainLayout from "../components/MainLayout";
+import Testimonial from "../components/Testimonial";
 import IgelIllustration from "../assets/images/Sei_entspannt.webp";
 
 const Concept: React.FC = () => {
@@ -23,6 +24,11 @@ const Concept: React.FC = () => {
                     alt=""
                     className="col-start-2 col-end-4 mx-auto rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] md:col-start-3"
                     decoding="async"
+                />
+                <Testimonial
+                    text="Tatjana ist eine sehr liebevolle und strukturierte Tagesmutter. Sie strahlt viel Ruhe aus welche sich dann auch auf die Kinder überträgt. Die Aktionen und Badtelangebote sind richtig toll. Wir würden uns immer wieder für Tatjana entscheiden."
+                    name="Tatjana Berg"
+                    rating={5}
                 />
                 <section className="col-start-2 col-end-4">
                     <h3 className="mb-2 text-2xl font-bold">

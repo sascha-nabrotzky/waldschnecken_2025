@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import MainLayout from "../components/MainLayout";
 import Contact from "../components/Conact";
 import Advantages from "../components/Advantages";
-import Testimonials from "../components/Testimonials";
+import Testimonial from "../components/Testimonial";
 import Logo from "../assets/images/Logo_Waldschnecken.webp";
 import LogoSmall from "../assets/images/Logo_Waldschnecken_small.webp";
 
@@ -49,7 +49,13 @@ const IndexPage: React.FC = () => {
                     />
                 </picture>
 
-                <Testimonials />
+                <Testimonial
+                    text="Wir würden uns jederzeit wieder für Tatjana entscheiden, denn
+                sie geht nicht nur individuell auf jedes Kind ein, sondern
+                schafft auch eine erste Gruppengemeinschaft."
+                    name="Ina Bieletzki"
+                    rating={5}
+                />
                 <Advantages />
                 <Contact />
             </MainLayout>

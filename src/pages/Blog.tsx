@@ -80,7 +80,7 @@ const Blog: React.FC = () => {
                                     <img
                                         src={Eichel}
                                         alt=""
-                                        className="col-start-2 col-end-4 mx-auto"
+                                        className="col-start-2 col-end-4 mx-auto max-w-12"
                                         loading="lazy"
                                     />
                                 </>
