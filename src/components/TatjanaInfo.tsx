@@ -17,7 +17,7 @@ const TatanaInfo: React.FC = () => {
     };
 
     return (
-        <div className="col-start-2 col-end-4 flex flex-col items-center justify-center text-center md:col-start-2 md:col-end-3">
+        <div className="col-start-1 col-end-2 flex flex-col items-center justify-center text-center md:col-start-1 md:col-end-2">
             <div className="mb-4 aspect-square w-36 overflow-hidden rounded-full bg-mine-shaft-200 md:w-48">
                 <img
                     src={TatjanaImg}
@@ -40,7 +40,8 @@ const TatanaInfo: React.FC = () => {
             </a>
             <button
                 onClick={openModal1}
-                className="mt-4 rounded-full bg-mine-shaft-600 px-4 pt-1.5 pb-2 text-xl leading-none text-white transition-opacity duration-300 hover:cursor-pointer hover:opacity-50"
+                className="mt-8 rounded-full bg-mine-shaft-600 px-4 pt-1.5 pb-2 text-xl leading-none text-white transition-opacity duration-300 hover:cursor-pointer hover:opacity-50"
+                aria-label="Tatjanas Infos öffnen"
             >
                 Details
             </button>
@@ -53,7 +54,7 @@ const TatanaInfo: React.FC = () => {
                     <button
                         onClick={closeModal1}
                         className="mb-2 px-4"
-                        aria-label="close tatjanas info dialog box"
+                        aria-label="Tatjanas Infos schließen"
                     >
                         <CloseIcon className="h-6" />
                     </button>

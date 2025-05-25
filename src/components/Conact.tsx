@@ -17,11 +17,13 @@ const Address: React.FC = () => {
 
     return (
         <>
-            <TatanaInfo />
-            <OksanaInfo />
-            <address className="col-start-2 col-end-4 text-xl not-italic">
+            <div className="col-start-2 col-end-4 grid grid-cols-1 gap-y-12 border-y py-12 md:grid-cols-2 md:gap-8 md:py-16">
+                <TatanaInfo />
+                <OksanaInfo />
+            </div>
+            <address className="col-start-2 col-end-4 text-2xl not-italic">
                 <h3 className="mb-2 text-center font-bold">
-                    Großtagespflege &bdquo;Waldschnecken&ldquo;
+                    Kindergroßtagespflege &bdquo;Waldschnecken&ldquo;
                 </h3>
                 <p className="text-center">
                     Auf Stieneckers 52,

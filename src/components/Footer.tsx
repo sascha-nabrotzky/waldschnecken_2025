@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
                             className="transition-opacity duration-300 hover:opacity-50"
                             aria-label="Sascha Nabrotzky - Webdesign & Entwicklung"
                         >
-                            Sascha Nabrotzky - Webdesign & Entwicklung
+                            Webdesign & Entwicklung - Sascha Nabrotzky
                         </a>
                     </div>
                 </nav>

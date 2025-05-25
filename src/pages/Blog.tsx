@@ -46,7 +46,7 @@ const Blog: React.FC = () => {
             >
                 <img
                     src={SeiFrechImg}
-                    alt="Illustration eines Eichhörnchens von Sascha Nabrotzky"
+                    alt=""
                     className="col-start-2 col-end-4 mx-auto rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] md:col-start-3"
                     decoding="async"
                 />
@@ -70,15 +70,16 @@ const Blog: React.FC = () => {
                                         <p className="text-xl">
                                             {post.fields.normalText}
                                         </p>
-                                        <img
-                                            src={post.fields.image.url}
-                                            alt={post.fields.image.title}
-                                            className=""
-                                        />
+                                        {/* {post.fields.image && (
+                                            <img
+                                                src={post.fields.image.url}
+                                                alt={post.fields.image.title}
+                                            />
+                                        )} */}
                                     </div>
                                     <img
                                         src={Eichel}
-                                        alt="Illustration einer Eichel von Sascha Nabrotzky"
+                                        alt=""
                                         className="col-start-2 col-end-4 mx-auto"
                                         loading="lazy"
                                     />

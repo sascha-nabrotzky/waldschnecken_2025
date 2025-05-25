@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import MainLayout from "../components/MainLayout";
-import Logo from "../assets/images/Sei_entspannt.webp";
+import IgelIllustration from "../assets/images/Sei_entspannt.webp";
 
 const Concept: React.FC = () => {
     return (
@@ -19,8 +19,8 @@ const Concept: React.FC = () => {
                 subtitle="Natürlicher Tagesablauf und Bewegung an der frischen Luft"
             >
                 <img
-                    src={Logo}
-                    alt="Illustration eines Igels von Sascha Nabrotzky"
+                    src={IgelIllustration}
+                    alt=""
                     className="col-start-2 col-end-4 mx-auto rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] md:col-start-3"
                     decoding="async"
                 />
