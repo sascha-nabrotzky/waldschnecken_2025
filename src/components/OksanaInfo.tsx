@@ -17,37 +17,39 @@ const OksanaInfo: React.FC = () => {
     };
 
     return (
-        <div className="col-start-1 col-end-2 flex flex-col items-center justify-center md:col-start-2 md:col-end-3">
-            <div className="mb-4 aspect-square w-36 overflow-hidden rounded-full bg-mine-shaft-200 md:w-48">
-                <img
-                    src={OksanaImg}
-                    alt="Foto von Tagesmutter Oksana Welk"
-                    className="h-full w-full object-cover"
-                    loading="lazy"
-                    decoding="async"
-                />
+        <>
+            <div className="col-start-1 col-end-2 flex flex-col items-center justify-center md:col-start-2 md:col-end-3">
+                <div className="mb-4 aspect-square w-36 overflow-hidden rounded-full bg-mine-shaft-200 md:w-48">
+                    <img
+                        src={OksanaImg}
+                        alt="Foto von Tagesmutter Oksana Welk"
+                        className="h-full w-full object-cover"
+                        loading="lazy"
+                        decoding="async"
+                    />
+                </div>
+                <a href={"tel: +49 162 1366853"} className="text-center">
+                    <p className="text-xl">
+                        Oksana Welk
+                        <br />
+                        <strong className="tracking-wider">0162 1366853</strong>
+                    </p>
+                    <p className="mt-3 border-t pt-3 leading-5 text-mine-shaft-600">
+                        Zertifizierte Tagesmutter
+                    </p>
+                </a>
+                <button
+                    onClick={openModal2}
+                    className="mt-8 rounded-full bg-mine-shaft-600 px-4 pt-1.5 pb-2 text-lg leading-none text-white transition-opacity duration-300 hover:cursor-pointer hover:opacity-50"
+                    aria-label="Oksanas Infos öffnen"
+                >
+                    Details
+                </button>
             </div>
-            <a href={"tel: +49 162 1366853"} className="text-center">
-                <p className="text-xl">
-                    Oksana Welk
-                    <br />
-                    <strong className="tracking-wider">0162 1366853</strong>
-                </p>
-                <p className="mt-3 border-t pt-3 leading-5 text-mine-shaft-600">
-                    Zertifizierte Tagesmutter
-                </p>
-            </a>
-            <button
-                onClick={openModal2}
-                className="mt-8 rounded-full bg-mine-shaft-600 px-4 pt-1.5 pb-2 text-lg leading-none text-white transition-opacity duration-300 hover:cursor-pointer hover:opacity-50"
-                aria-label="Oksanas Infos öffnen"
-            >
-                Details
-            </button>
 
             <dialog
                 ref={modalRef2}
-                className="mx-4 max-w-xl rounded bg-white pt-4 pb-8 text-left backdrop:bg-mine-shaft-950/70 sm:m-auto"
+                className="m-auto max-w-xl rounded bg-white pt-4 pb-8 text-left backdrop:bg-mine-shaft-950/80 max-sm:mx-4"
             >
                 <div className="flex justify-end">
                     <button
@@ -71,7 +73,7 @@ const OksanaInfo: React.FC = () => {
                     Großtagespflege Waldschnecken.
                 </div>
             </dialog>
-        </div>
+        </>
     );
 };
 
