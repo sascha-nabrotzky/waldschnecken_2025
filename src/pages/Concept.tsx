@@ -1,8 +1,10 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import MainLayout from "../components/MainLayout";
+import IllustrationHeader from "../components/IllustrationHeader";
 import Testimonial from "../components/Testimonial";
 import IgelIllustration from "../assets/images/Sei_entspannt.webp";
+import IgelIllustrationSmall from "../assets/images/Sei_entspannt_small.webp";
 
 const Concept: React.FC = () => {
     return (
@@ -19,14 +21,13 @@ const Concept: React.FC = () => {
                 pagetitle="Pädagogische Schwerpunkte"
                 subtitle="Natürlicher Tagesablauf und Bewegung an der frischen Luft"
             >
-                <img
-                    src={IgelIllustration}
-                    alt=""
-                    className="col-start-2 col-end-4 mx-auto rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] md:col-start-3"
-                    decoding="async"
+                <IllustrationHeader
+                    srcBig={IgelIllustration}
+                    srcSmall={IgelIllustrationSmall}
                 />
+
                 <Testimonial
-                    text="Tatjana ist eine sehr liebevolle und strukturierte Tagesmutter. Sie strahlt viel Ruhe aus welche sich dann auch auf die Kinder überträgt. Die Aktionen und Badtelangebote sind richtig toll. Wir würden uns immer wieder für Tatjana entscheiden."
+                    text="Tatjana ist eine sehr liebevolle und strukturierte Tagesmutter. Sie strahlt viel Ruhe aus welche sich dann auch auf die Kinder überträgt. Die Aktionen und Bastelangebote sind richtig toll. Wir würden uns immer wieder für Tatjana entscheiden."
                     name="Tatjana Berg"
                     rating={5}
                 />
@@ -58,10 +59,7 @@ const Concept: React.FC = () => {
                         spielerisch den Wald kennen. Nebenbei wird auch die
                         Koordination und Motorik gefördert, indem sie über
                         weichen und unebenen Boden laufen oder Ästen ausweichen
-                        müssen. Im Sommer 2022 haben wir zusätzlich für unseren
-                        Schwerpunkt Waldpädagogik, ein kleines Waldstück
-                        gepachtet. Das wird nach und nach zu einem
-                        Waldspielplatz gestaltet.
+                        müssen.
                     </p>
                     <h3 className="mt-8 mb-2 text-2xl font-bold">
                         Sprachförderung

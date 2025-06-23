@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import MainLayout from "../components/MainLayout";
+import IllustrationHeader from "../components/IllustrationHeader";
 import SeiFrechImg from "../assets/images/Sei_frech.webp";
+import SeiFrechImgSmall from "../assets/images/Sei_frech_small.webp";
 import Eichel from "../assets/images/Eichel.webp";
 
 const Blog: React.FC = () => {
@@ -44,12 +46,11 @@ const Blog: React.FC = () => {
                 pagetitle="Unser Alltagsleben"
                 subtitle="Seht was Eure Kinder alles erleben oder wir euch sonst noch mitteilen wollen."
             >
-                <img
-                    src={SeiFrechImg}
-                    alt=""
-                    className="col-start-2 col-end-4 mx-auto rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] md:col-start-3"
-                    decoding="async"
+                <IllustrationHeader
+                    srcBig={SeiFrechImg}
+                    srcSmall={SeiFrechImgSmall}
                 />
+
                 <div className="col-start-2 col-end-4 mt-8 text-xl">
                     {loading && <p>Lade Blogbeiträge...</p>}
                     {error && <p className="text-red-500">{error}</p>}

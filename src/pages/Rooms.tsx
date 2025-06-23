@@ -1,14 +1,16 @@
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import MainLayout from "../components/MainLayout";
 import Testimonial from "../components/Testimonial";
 import SeiMutigIllustration from "../assets/images/Sei_mutig.webp";
+import SeiMutigIllustrationSmall from "../assets/images/Sei_mutig_small.webp";
 import Wohnzimmer from "../assets/images/kita-wohnzimmer-1.webp";
 import Themenzimmer from "../assets/images/kita-themenzimmer-1.webp";
 import Kueche from "../assets/images/kita-kueche-2.webp";
 import Schlafraum from "../assets/images/kita-schlafraum-1.webp";
 import Badezimmer from "../assets/images/kita-bad-1.webp";
 import Aussen from "../assets/images/kita-aussen-1.webp";
+import IllustrationHeader from "../components/IllustrationHeader";
 
 const Rooms: React.FC = () => {
     return (
@@ -25,12 +27,11 @@ const Rooms: React.FC = () => {
                 pagetitle="Räume"
                 subtitle="Unsere Großtagespflege befindet sich in einem freistehenden Haus, in der Erdgeschosswohnung "
             >
-                <img
-                    src={SeiMutigIllustration}
-                    alt=""
-                    className="col-start-2 col-end-4 mx-auto rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] md:col-start-3"
-                    decoding="async"
+                <IllustrationHeader
+                    srcBig={SeiMutigIllustration}
+                    srcSmall={SeiMutigIllustrationSmall}
                 />
+
                 <Testimonial
                     text="Super liebe und einfühlsame Tagesmutter. Würde ich immer immer wieder meine Kinder hin geben."
                     name="Verena K."
