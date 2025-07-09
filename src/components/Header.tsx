@@ -6,10 +6,10 @@ import WavesTop from "../assets/images/waves-top.svg?react";
 const Header: React.FC = () => {
     return (
         <>
-            <div className="bg-roman-coffee-600 sm:hidden">
+            <div id="mobile-logo" className="bg-roman-coffee-600 sm:hidden">
                 <Logo
                     className="mx-auto h-24 text-white"
-                    aria-label="Logo der Waldschnecken"
+                    aria-label="Großkindertagespflege Waldschnecken in Ladbergen"
                 />
             </div>
 

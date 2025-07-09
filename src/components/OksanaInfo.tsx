@@ -28,16 +28,12 @@ const OksanaInfo: React.FC = () => {
                         decoding="async"
                     />
                 </div>
-                <a href={"tel: +49 162 1366853"} className="text-center">
-                    <p className="text-xl">
-                        Oksana Welk
-                        <br />
-                        <strong className="tracking-wider">0162 1366853</strong>
-                    </p>
+                <div className="text-center">
+                    <p className="text-2xl">Oksana Welk</p>
                     <p className="mt-3 border-t pt-3 leading-5 text-mine-shaft-600">
                         Zertifizierte Tagesmutter
                     </p>
-                </a>
+                </div>
                 <button
                     onClick={openModal2}
                     className="mt-8 rounded-full bg-mine-shaft-600 px-4 pt-1.5 pb-2 text-lg leading-none text-white transition-opacity duration-300 hover:cursor-pointer hover:opacity-50"

@@ -27,17 +27,13 @@ const TatanaInfo: React.FC = () => {
                     decoding="async"
                 />
             </div>
-            <a href={"tel: +49 170 2802494"}>
-                <p className="text-xl">
-                    Tatjana Nabrotzky
-                    <br />
-                    <strong className="tracking-wider">0170 2802494</strong>
-                </p>
+            <div>
+                <p className="text-2xl">Tatjana Nabrotzky</p>
                 <p className="mt-3 border-t pt-3 leading-5 text-mine-shaft-600">
                     Staatl. geprüfte Erzieherin <br />
                     und zertifizierte Tagesmutter
                 </p>
-            </a>
+            </div>
             <button
                 onClick={openModal1}
                 className="mt-8 rounded-full bg-mine-shaft-600 px-4 pt-1.5 pb-2 text-xl leading-none text-white transition-opacity duration-300 hover:cursor-pointer hover:opacity-50"

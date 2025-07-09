@@ -21,17 +21,24 @@ const Address: React.FC = () => {
                 <TatanaInfo />
                 <OksanaInfo />
             </div>
-            <address className="col-start-2 col-end-4 text-2xl not-italic">
-                <h3 className="mb-2 text-center font-bold">
+
+            <address className="col-start-2 col-end-4 text-center text-2xl not-italic">
+                <h3 className="mb-2 font-bold">
                     Kindergroßtagespflege &bdquo;Waldschnecken&ldquo;
                 </h3>
-                <p className="text-center">
+                <p className="mb-4">
                     Auf Stieneckers 52,
                     <br />
                     49549 Ladbergen
                     <br />
                 </p>
+                <a href={"tel: +49 155 63984744"}>
+                    <p className="font-bold tracking-wider underline underline-offset-4">
+                        +49 155 63984744
+                    </p>
+                </a>
             </address>
+
             <div className="col-start-2 col-end-4 text-center text-xl">
                 <a
                     href={`${currentMail}`}
