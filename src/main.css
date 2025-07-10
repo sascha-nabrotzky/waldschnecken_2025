@@ -171,8 +171,11 @@
         }
         &:nth-of-type(5) {
             rotate: 2deg;
-            grid-column-start: 2;
-            grid-column-end: 4;
+
+            @media screen and (width > 640px) {
+                grid-column-start: 2;
+                grid-column-end: 4;
+            }
         }
         &:nth-of-type(6) {
             rotate: -2deg;

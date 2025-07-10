@@ -69,7 +69,7 @@ const Advantages: React.FC = () => {
             <h2 className="mb-6 text-center text-3xl/normal font-bold">
                 Euer Kind ist bei uns bestens aufgehoben:
             </h2>
-            <div className="relative grid gap-6 md:grid-cols-[repeat(auto-fill,_minmax(15rem,_1fr))]">
+            <div className="relative grid sm:gap-6 md:grid-cols-[repeat(auto-fill,_minmax(15rem,_1fr))]">
                 {text.map((item, index) => {
                     return (
                         <div key={index} className="advantage flex flex-col">
