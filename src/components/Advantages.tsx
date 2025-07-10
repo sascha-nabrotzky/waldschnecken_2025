@@ -3,16 +3,8 @@ import Grass from "../assets/images/grass.svg?react";
 
 const text = [
     {
-        title: "Individuelle Betreuung:",
-        text: "Wir gehen auf die Bedürfnisse jedes einzelnen Kindes ein.",
-    },
-    {
         title: "Inklusion:",
         text: "Betreuung von Kindern mit erhöhtem Pflegeaufwand.",
-    },
-    {
-        title: "Familiäre Atmosphäre:",
-        text: "Kinder fühlen sich bei uns sicher und geborgen.",
     },
     {
         title: "Flexibilität:",
@@ -21,6 +13,14 @@ const text = [
     {
         title: "Konitnuität:",
         text: "Konstante Bezugspersonen über einen längeren Zeitraum hinweg.",
+    },
+    {
+        title: "Familiäre Atmosphäre:",
+        text: "Kinder fühlen sich bei uns sicher und geborgen.",
+    },
+    {
+        title: "Individuelle Betreuung:",
+        text: "Wir gehen auf die Bedürfnisse jedes einzelnen Kindes ein.",
     },
     {
         title: "Kleine Gruppengröße:",
