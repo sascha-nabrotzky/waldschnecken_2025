@@ -4,6 +4,19 @@ import Logo from "../assets/icons/logo.svg?react";
 import WavesTop from "../assets/images/waves-top.svg?react";
 
 const Header: React.FC = () => {
+    const [logoHeightOnScroll, setLogoHeightOnScroll] = React.useState(6);
+
+    React.useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            const newHeight = Math.max(3, 6 - scrollY / 100);
+            setLogoHeightOnScroll(newHeight);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    });
+
     return (
         <>
             <div id="mobile-logo" className="bg-roman-coffee-600 sm:hidden">
@@ -14,7 +27,7 @@ const Header: React.FC = () => {
             </div>
 
             <header className="sticky top-0 z-20 flex flex-col justify-center">
-                <nav className="flex w-full flex-wrap items-center justify-center gap-6 bg-roman-coffee-600 py-2 text-xl text-white shadow-xl">
+                <nav className="flex w-full flex-wrap items-center justify-center gap-6 bg-roman-coffee-600 py-3 text-xl text-white shadow-xl">
                     <Link
                         to="/"
                         className="transition-opacity duration-300 hover:opacity-50"
@@ -27,7 +40,10 @@ const Header: React.FC = () => {
                     >
                         Konzept
                     </Link>
-                    <Logo className="mx-8 h-24 text-white max-sm:hidden" />
+                    <Logo
+                        className="mx-8 text-white max-sm:hidden"
+                        style={{ height: `${logoHeightOnScroll}rem` }}
+                    />
                     <Link
                         to="/rooms"
                         className="transition-opacity duration-300 hover:opacity-50"

@@ -36,7 +36,7 @@ const OksanaInfo: React.FC = () => {
                 </div>
                 <button
                     onClick={openModal2}
-                    className="mt-8 rounded-full bg-mine-shaft-600 px-4 pt-1.5 pb-2 text-lg leading-none text-white transition-opacity duration-300 hover:cursor-pointer hover:opacity-50"
+                    className="transition-color mt-8 rounded-full bg-mine-shaft-600 px-4 pt-1.5 pb-2 text-lg leading-none text-white duration-300 hover:cursor-pointer hover:bg-mine-shaft-900"
                     aria-label="Oksanas Infos öffnen"
                 >
                     Details
