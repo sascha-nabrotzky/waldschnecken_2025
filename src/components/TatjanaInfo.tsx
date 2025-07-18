@@ -5,12 +5,12 @@ import CloseIcon from "../assets/icons/close.svg?react";
 const TatanaInfo: React.FC = () => {
     const modalRef1 = React.useRef<HTMLDialogElement>(null);
 
-    const openModal1 = (): void => {
+    const openModal = (): void => {
         if (modalRef1.current != null) {
             modalRef1.current.showModal();
         }
     };
-    const closeModal1 = (): void => {
+    const closeModal = (): void => {
         if (modalRef1.current != null) {
             modalRef1.current.close();
         }
@@ -35,7 +35,7 @@ const TatanaInfo: React.FC = () => {
                 </p>
             </div>
             <button
-                onClick={openModal1}
+                onClick={openModal}
                 className="transition-color mt-8 rounded-full bg-mine-shaft-600 px-4 pt-1.5 pb-2 text-xl leading-none text-white duration-300 hover:cursor-pointer hover:bg-mine-shaft-900"
                 aria-label="Tatjanas Infos öffnen"
             >
@@ -48,7 +48,7 @@ const TatanaInfo: React.FC = () => {
             >
                 <div className="flex justify-end">
                     <button
-                        onClick={closeModal1}
+                        onClick={closeModal}
                         className="mb-2 px-4"
                         aria-label="Tatjanas Infos schließen"
                     >

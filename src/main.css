@@ -126,17 +126,17 @@
 
     /* Dialog */
     dialog[open] {
-        animation: slide-in 600ms forwards;
+        animation:
+            slide-in 600ms ease-in-out 300ms both,
+            slide-up 800ms ease-in-out 300ms both;
     }
 
     /* Animation */
-    @keyframes slide-in {
+    @keyframes fade-in {
         0% {
-            transform: translateY(2rem);
             opacity: 0;
         }
         100% {
-            transform: translateY(0);
             opacity: 1;
         }
     }
