@@ -21,7 +21,7 @@ const TatanaInfo: React.FC = () => {
             <div className="mb-4 aspect-square w-36 overflow-hidden rounded-full bg-mine-shaft-200 md:w-48">
                 <img
                     src={TatjanaImg}
-                    alt="Foto von Tagesmutter Tatjana Nabrotzky"
+                    alt=""
                     className="h-full w-full object-cover"
                     loading="lazy"
                     decoding="async"
