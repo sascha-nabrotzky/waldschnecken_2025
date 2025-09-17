@@ -54,17 +54,17 @@ const Footer: React.FC = () => {
                             target="_blank"
                             rel="noreferrer noopener"
                             className="underline underline-offset-5 transition-opacity duration-300 hover:opacity-50"
-                            aria-label="Sascha Nabrotzky - Webdesign & Illustration"
+                            aria-label="Sascha Nabrotzky - Webdesign"
                         >
                             Webdesign
                         </a>
                         <span> & </span>
                         <a
-                            href="https://sascha-nabrotzky.de"
+                            href="https://cara.app/smallworlds/all"
                             target="_blank"
                             rel="noreferrer noopener"
                             className="underline underline-offset-5 transition-opacity duration-300 hover:opacity-50"
-                            aria-label="Sascha Nabrotzky - Webdesign & Illustration"
+                            aria-label="Sascha Nabrotzky Illustration"
                         >
                             Illustration
                         </a>
