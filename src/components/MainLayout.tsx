@@ -32,7 +32,7 @@ const MainContent: React.FC<Props> = ({
                         aria-label="heading"
                     >
                         <h1
-                            className={`font-serif ${isHerotitle ? "text-5xl md:text-7xl/tight" : "text-3xl md:text-5xl/tight"} md:mt-12`}
+                            className={`font-serif ${isHerotitle ? "mx-auto max-w-5xl text-5xl md:text-7xl/tight" : "text-3xl md:text-5xl/tight"} md:mt-12`}
                         >
                             {pagetitle}
                         </h1>

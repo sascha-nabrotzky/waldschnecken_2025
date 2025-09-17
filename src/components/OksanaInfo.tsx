@@ -29,7 +29,7 @@ const OksanaInfo: React.FC = () => {
                     />
                 </div>
                 <div className="text-center">
-                    <p className="text-2xl">Oksana Welk</p>
+                    <p className="text-2xl font-bold">Oksana Welk</p>
                     <p className="mt-3 border-t pt-3 leading-5 text-mine-shaft-600">
                         Zertifizierte Tagesmutter
                     </p>
@@ -50,7 +50,7 @@ const OksanaInfo: React.FC = () => {
                 <div className="flex justify-end">
                     <button
                         onClick={closeModal}
-                        className="mb-2 px-4"
+                        className="mb-2 cursor-pointer px-4"
                         aria-label="Oksanas Infos schließen"
                     >
                         <CloseIcon className="h-6" />

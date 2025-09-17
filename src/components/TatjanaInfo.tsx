@@ -28,7 +28,7 @@ const TatanaInfo: React.FC = () => {
                 />
             </div>
             <div>
-                <p className="text-2xl">Tatjana Nabrotzky</p>
+                <p className="text-2xl font-bold">Tatjana Nabrotzky</p>
                 <p className="mt-3 border-t pt-3 leading-5 text-mine-shaft-600">
                     Staatl. geprüfte Erzieherin <br />
                     und zertifizierte Tagesmutter
@@ -49,7 +49,7 @@ const TatanaInfo: React.FC = () => {
                 <div className="flex justify-end">
                     <button
                         onClick={closeModal}
-                        className="mb-2 px-4"
+                        className="mb-2 cursor-pointer px-4"
                         aria-label="Tatjanas Infos schließen"
                     >
                         <CloseIcon className="h-6" />
