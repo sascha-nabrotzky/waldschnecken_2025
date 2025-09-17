@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import FreePlaceCounter from "./FreePlaceCounter";
 import Logo from "../assets/icons/logo.svg?react";
 import WavesTop from "../assets/images/waves-top.svg?react";
 
@@ -58,7 +59,7 @@ const Header: React.FC = () => {
                     </Link>
                 </nav>
             </header>
-
+            <FreePlaceCounter count={1} />
             <WavesTop className="text-roman-coffee-600 xl:origin-top-right xl:rotate-6" />
         </>
     );
