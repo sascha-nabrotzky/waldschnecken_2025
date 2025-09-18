@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="col-start-2 col-end-4">
+                    <div className="col-start-2 col-end-4 max-sm:mt-6">
                         <a
                             href="https://sascha-nabrotzky.de"
                             target="_blank"

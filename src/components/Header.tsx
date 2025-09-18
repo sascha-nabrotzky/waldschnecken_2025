@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router";
-import FreePlaceCounter from "./FreePlaceCounter";
+import FreeSeatsCounter from "./FreeSeatsCounter";
 import Logo from "../assets/icons/logo.svg?react";
 import WavesTop from "../assets/images/waves-top.svg?react";
 
-const Header: React.FC = () => {
+export type FreeSeats = {
+    freeSeats: { count: number; month?: string; year?: number };
+};
+
+const Header: React.FC<FreeSeats> = ({ freeSeats }) => {
     const [logoHeightOnScroll, setLogoHeightOnScroll] = React.useState(6);
 
     React.useEffect(() => {
@@ -59,7 +63,7 @@ const Header: React.FC = () => {
                     </Link>
                 </nav>
             </header>
-            <FreePlaceCounter count={1} />
+            {freeSeats.count > 0 && <FreeSeatsCounter {...freeSeats} />}
             <WavesTop className="text-roman-coffee-600 xl:origin-top-right xl:rotate-6" />
         </>
     );

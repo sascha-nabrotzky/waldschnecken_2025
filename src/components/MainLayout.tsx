@@ -18,10 +18,14 @@ const MainContent: React.FC<Props> = ({
         window.scrollTo(0, 0);
     }, []);
 
+    const freeSeats = { count: 1, month: "November", year: 2025 };
+
     return (
         <div className="grid min-h-dvh grid-rows-[repeat(3,_min-content)_1fr_min-content] text-mine-shaft-950">
-            <Header />
-            <main className="z-10 my-6 grid grid-cols-[minmax(2rem,_1fr)_repeat(2,_minmax(0,_25rem))_minmax(2rem,_1fr)] gap-y-16 md:gap-x-16 md:gap-y-20 lg:-mt-10 xl:-mt-40">
+            <Header freeSeats={freeSeats} />
+            <main
+                className={`z-10 grid grid-cols-[minmax(2rem,_1fr)_repeat(2,_minmax(0,_25rem))_minmax(2rem,_1fr)] gap-y-16 ${freeSeats.count > 0 ? "pt-20" : "pt-6"} pb-6 md:gap-x-16 md:gap-y-20 lg:-mt-10 xl:-mt-40`}
+            >
                 {pagetitle != null && (
                     <div
                         className={`text-center hyphens-auto ${
