@@ -48,28 +48,6 @@ const Footer: React.FC = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="col-start-2 col-end-4 max-sm:mt-6">
-                        <a
-                            href="https://sascha-nabrotzky.de"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            className="underline underline-offset-5 transition-opacity duration-300 hover:opacity-50"
-                            aria-label="Sascha Nabrotzky - Webdesign"
-                        >
-                            Webdesign
-                        </a>
-                        <span> & </span>
-                        <a
-                            href="https://cara.app/smallworlds/all"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            className="underline underline-offset-5 transition-opacity duration-300 hover:opacity-50"
-                            aria-label="Sascha Nabrotzky Illustration"
-                        >
-                            Illustration
-                        </a>
-                        <span> - Sascha Nabrotzky</span>
-                    </div>
                 </nav>
             </footer>
         </>
