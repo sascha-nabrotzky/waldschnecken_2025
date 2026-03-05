@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
                                 Anmeldeportal
                             </a>
                         </div>
-                        <div className="flex flex-col">
+                        <div className="flex flex-col justify-end">
                             <Link
                                 to="/imprint"
                                 className="mb-2 text-lg transition-opacity duration-300 hover:opacity-50"
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
                             </Link>
                             <Link
                                 to="/privacy-policy"
-                                className="mb-8 text-lg transition-opacity duration-300 hover:opacity-50"
+                                className="mb-2 text-lg transition-opacity duration-300 hover:opacity-50"
                             >
                                 Datenschutz
                             </Link>
